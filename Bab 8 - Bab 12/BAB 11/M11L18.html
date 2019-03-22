@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar coding</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("p").animate("slow",function(){
+					alert("The paragraph is now hidden");
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+<button>hide</button>
+
+<p>This is a paragraph w/ little content</p>
+</html>

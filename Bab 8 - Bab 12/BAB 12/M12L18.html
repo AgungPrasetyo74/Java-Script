@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+					$("button").click(function(){
+						var txt = "";
+						txt += "width of div: " + $("#div1").width() + "</br>";
+						txt += "Height of div: " + $("#div1").height() + "</br>";
+						txt += "Outer widthof div : " + $("#div1").outerWidth() + "</br>";
+						txt += "Outer height of div: " + $("#div1").outerHeight();
+						$("#div1").html(txt);
+					});
+				});
+			</script>
+			<style>
+	#div1 {
+		height: 100px;
+		width: 300px;
+		padding: 10px;
+		margin: 30px;
+		border: 1px solid blue;
+		background-color: lightblue;
+	}
+</style>
+</head>
+<body>
+	<div id="div1"></div>
+		<br>
+
+		<button>Display dimensions of div</button>
+
+		<p>innerWidth()- return the width of an element (includes padding).</p>
+		<p>innerHeight()- return the height of an element (includes padding).</p>
+</body>
+</body>
+</html>

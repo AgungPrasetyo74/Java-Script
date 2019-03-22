@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("button").click(function(){
+					$("w3s").attr("href", function(i, origvalue){
+						return origvalue + "/jquery/";
+				});
+			});
+		});
+		</script>
+</head>
+<body>
+		<p><a href="https://www.w3schools.com" id="w3s">W3Schools</a></p>
+
+		<button> Change href value </button>
+
+		<p> Mouse over the link (or clik on it) to see that the value of the href attirbute has change.</p>
+
+</body>
+</html>

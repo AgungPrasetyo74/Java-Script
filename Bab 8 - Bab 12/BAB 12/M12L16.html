@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+					$("button").click(function(){
+						var txt = "";
+						txt += "width of div: " + $("#div1").width() + "</br>";
+						txt += "Height of div: " + $("#div1").height();
+						$("#div1").html(txt);
+					});
+				});
+			</script>
+			<style>
+		#div1 {
+			height: 100px;
+			width: 300px;
+			padding: 10px;
+			margin: 3px;
+			border: 1px solid blue;
+			background-color: lightblue;
+		}
+	</style>
+</head>
+<body>
+	<div id="div1"></div>
+	<br>
+
+	<button>Display dimensions of div</button>
+
+	<p>widht() - returns the widht of an element.</p>
+	<p>height() - return the height of an element.</p>
+		
+</body>
+</html>
